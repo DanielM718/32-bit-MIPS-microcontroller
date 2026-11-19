@@ -1,11 +1,15 @@
 00000001 //ADD
-00000002 //SUB
+00000004 //SUB changed to make zout low at 13ps 
 FFFFFFFF //AND
-00000004 // AND
-FFFF0000  //NOR
+00000004 // was AND now ADD 
+FFFF0000  //was NOR now SLL 
 00000005  //sll
 00000006  //slr
-0000FFFF //AAD
+0000FFFF //ADD
 10000000  //sub
 00000000 //NOR
 00000000 //sll
+10101010 // SLL only uses b, a does not matter
+00000000 // SLLL only uses b, a does not matter
+01010101 // SLR only uses b, a does not matter
+00000000 // SLR only uses b, a does not matter

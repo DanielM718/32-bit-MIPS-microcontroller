@@ -1,11 +1,16 @@
 00000002 
-00000000
+00000002 // changed to make zout low at 13ps 
 FFFFF000  //AND
-00000004 //AND
-0000FFFF //NOR
-00000010 // sll
+00000008 // was AND is ADD
+00000002 // was NOR is SLLL
+00000000 // sll, change to make zout high at 51ps  
 00000004 //slr
 00010000 //ADD
 0FFFFFFF // sub
 FFFFFFFF //NOR
-00008000 // sll
+00010000 // sll
+00002000 // SLL b shifted by 9
+00000800 // SLL b shifted by 3
+00010000 // SLR b shifted by 8
+00040000 // SLR b shifted by 2
+ 

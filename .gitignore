@@ -28,3 +28,11 @@ Desktop.ini
 # VS Code
 .vscode/
 !.vscode/extensions.json
+
+# ignore project instructions
+instructions/
+
+# ignore model sim files
+ALU/work/
+wave.do
+vsim.wlf

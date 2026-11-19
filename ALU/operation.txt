@@ -1,11 +1,15 @@
 00000000 //add
 00000002//sub
 00000004 // AND
-00000004 //AND
-00000005//NOR
+00000000 //was AND is ADD
+0000001A//was NOR is SLL  
 0000001A //SLL
 0000001B//SLR
 00000000 //add
 00000002//sub
 00000005 //NOR
 000000FA //SLL
+0000009A // SLL shift by 9 to the left
+0000003A // SLL shift by 3 to the left
+0000008B // SLR shifted by 8 to the right
+0000002B // SLR shifted by 2 to the right

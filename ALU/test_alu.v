@@ -26,7 +26,7 @@ begin
 	$readmemh("operation.txt", operation );
 	clk = 0;
 	address = 0;
-	#135 $stop;
+	#155 $stop;
 end
 
 always begin
